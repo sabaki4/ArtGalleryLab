@@ -29,4 +29,23 @@ public class ArtworkTest {
     public void canGetPrice(){
         assertThat(painting.getPrice()).isEqualTo(1000);
     }
+
+    @Test
+    public void canSetTitle(){
+        painting.setTitle("Jalais Hill");
+        assertThat(painting.getTitle()).isEqualTo("Jalais Hill");
+    }
+
+    @Test
+    public void canSetArtist(){
+        Artist artist1 = new Artist("Freida");
+        painting.setArtist(artist1);
+        assertThat(painting.getArtist()).isEqualTo(artist1);
+    }
+
+    @Test
+    public void canSetPrice(){
+        painting.setPrice(1500);
+        assertThat(painting.getPrice()).isEqualTo(1500);
+    }
 }
