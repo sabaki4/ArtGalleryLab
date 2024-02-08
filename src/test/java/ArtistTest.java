@@ -15,4 +15,11 @@ public class ArtistTest {
         String actual = artist.getName();
         assertThat(actual).isEqualTo("Hannah");
     }
+
+    @Test
+    public void canSetName(){
+        artist.setName("Saba");
+        String actual = artist.getName();
+        assertThat(actual).isEqualTo("Saba");
+    }
 }
