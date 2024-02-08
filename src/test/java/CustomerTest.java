@@ -17,4 +17,21 @@ public class CustomerTest {
         String actual = anna.getName();
         assertThat(actual).isEqualTo("Anna");
     }
+
+    @Test
+    public void canSetName(){
+        anna.setName("Colin");
+        assertThat(anna.getName()).isEqualTo("Colin");
+    }
+
+    @Test
+    public void canGetWallet(){
+        assertThat(anna.getWallet()).isEqualTo(300);
+    }
+
+    @Test
+    public void canSetWallet(){
+        anna.setWallet(30);
+        assertThat(anna.getWallet()).isEqualTo(30);
+    }
 }
