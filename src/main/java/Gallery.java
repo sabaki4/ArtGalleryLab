@@ -35,4 +35,8 @@ public class Gallery {
     public void setStock(ArrayList<Artwork> stock) {
         this.stock = stock;
     }
+
+    public void addArtwork(Artwork artwork){
+        this.stock.add(artwork);
+    }
 }
